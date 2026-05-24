@@ -1,0 +1,118 @@
+.achievements {
+  background: var(--bg-primary);
+}
+
+.achievements__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.achievements__sub-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.achievements__sub-icon {
+  color: var(--accent-light);
+  font-size: 1.1rem;
+}
+
+/* Certifications */
+.achievements__certs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.achievements__cert-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.achievements__cert-card:hover {
+  border-color: var(--accent);
+  transform: translateX(4px);
+}
+
+.achievements__cert-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gradient);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.achievements__cert-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.achievements__cert-issuer {
+  font-size: 0.82rem;
+  color: var(--accent-light);
+}
+
+/* Achievements list */
+.achievements__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.achievements__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.achievements__item:hover {
+  border-color: var(--accent);
+  transform: translateX(4px);
+}
+
+.achievements__item-icon {
+  color: var(--accent-light);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.achievements__item-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.achievements__item-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .achievements__layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

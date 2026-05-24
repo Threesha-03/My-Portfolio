@@ -1,0 +1,11 @@
+{
+  "name": "threesha-portfolio",
+  "version": "1.0.0",
+  "description": "Threesha's MERN stack portfolio",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm start --prefix client",
+    "build": "npm run build --prefix client"
+  }
+}
