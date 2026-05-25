@@ -123,6 +123,19 @@
   transform: translateY(-2px);
 }
 
+.btn--resume {
+  border-color: var(--accent);
+  color: var(--accent-light);
+  background: transparent;
+  text-decoration: none;
+}
+
+.btn--resume:hover {
+  background: rgba(99, 102, 241, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px var(--accent-glow);
+}
+
 .hero__socials {
   display: flex;
   gap: 0.75rem;
