@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { FiGithub, FiLinkedin, FiMail, FiArrowDown } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail, FiArrowDown, FiDownload } from "react-icons/fi";
 import "./Hero.css";
 
 const roles = [
@@ -61,6 +61,16 @@ export default function Hero() {
             <Link to="contact" smooth duration={500} offset={-70} className="btn btn--outline">
               Get In Touch
             </Link>
+            <a
+              href="https://drive.google.com/file/d/1d1Up5LU3J41P6H5kCd8C2IqTC3spJWvm/view?usp=drivesdk"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn--resume"
+              download
+            >
+              <FiDownload size={16} />
+              Resume
+            </a>
           </div>
 
           <div className="hero__socials">
