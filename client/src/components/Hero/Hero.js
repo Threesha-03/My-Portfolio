@@ -105,7 +105,7 @@ export default function Hero() {
           <div className="hero__avatar-ring">
             <div className="hero__avatar-inner">
               <img
-                src="/profile.jpg"
+                src="/Profile.jpg"
                 alt="Threesha"
                 className="hero__avatar-img"
                 onError={(e) => {
